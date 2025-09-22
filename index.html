@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Misinformation Detection | FMD COLING 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>FMD Detection</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#models" class="nav-link">Models</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#demo" class="nav-link">Demo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Financial Misinformation Detection
+                    <span class="highlight">Using AI Models</span>
+                </h1>
+                <p class="hero-description">
+                    Advanced machine learning models to detect and classify financial misinformation. 
+                    Compare Logistic Regression, RNN (LSTM), and BERT models for accurate claim verification.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>78%</h3>
+                        <p>Best Accuracy</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>AI Models</p>
+                    </div>
+                    <div class="stat">
+                        <h3>1,953</h3>
+                        <p>Training Samples</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Classes</p>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Try Demo
+                    </a>
+                    <a href="#models" class="btn btn-secondary">
+                        <i class="fas fa-chart-line"></i>
+                        View Results
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-visualization">
+                    <div class="neural-network">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                        <div class="connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="models-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Model Comparison</h2>
+                <p>Three powerful AI models trained to detect financial misinformation</p>
+            </div>
+            
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Logistic Regression</h3>
+                    <p>Traditional ML approach using TF-IDF vectorization with 5,000 features</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Accuracy</span>
+                            <span class="metric-value">78.45%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Precision</span>
+                            <span class="metric-value">79.20%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Recall</span>
+                            <span class="metric-value">78.45%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">F1-Score</span>
+                            <span class="metric-value">76.80%</span>
+                        </div>
+                    </div>
+                    <div class="model-strengths">
+                        <h4>Strengths:</h4>
+                        <ul>
+                            <li>Fast training and inference</li>
+                            <li>Interpretable results</li>
+                            <li>Good baseline performance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>RNN (LSTM)</h3>
+                    <p>Deep learning with bidirectional LSTM layers and dropout regularization</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Accuracy</span>
+                            <span class="metric-value">72.30%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Precision</span>
+                            <span class="metric-value">73.85%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Recall</span>
+                            <span class="metric-value">72.30%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">F1-Score</span>
+                            <span class="metric-value">71.20%</span>
+                        </div>
+                    </div>
+                    <div class="model-strengths">
+                        <h4>Strengths:</h4>
+                        <ul>
+                            <li>Captures sequential patterns</li>
+                            <li>Handles variable length text</li>
+                            <li>Memory of long dependencies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>BERT</h3>
+                    <p>Pre-trained BERT-base-uncased with fine-tuning on financial claims</p>
+                    <div class="model-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Accuracy</span>
+                            <span class="metric-value">68.90%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Precision</span>
+                            <span class="metric-value">70.25%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Recall</span>
+                            <span class="metric-value">68.90%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">F1-Score</span>
+                            <span class="metric-value">67.45%</span>
+                        </div>
+                    </div>
+                    <div class="model-strengths">
+                        <h4>Strengths:</h4>
+                        <ul>
+                            <li>Contextual understanding</li>
+                            <li>Pre-trained on large corpus</li>
+                            <li>Handles complex language</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Chart -->
+            <div class="chart-container">
+                <h3>Performance Comparison</h3>
+                <canvas id="performanceChart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Detailed Comparison Table -->
+            <div class="comparison-table-container">
+                <h3>Detailed Performance Analysis</h3>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Metric</th>
+                                <th>Logistic Regression</th>
+                                <th>RNN (LSTM)</th>
+                                <th>BERT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Overall Accuracy</strong></td>
+                                <td class="best">78.45%</td>
+                                <td>72.30%</td>
+                                <td>68.90%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Macro Precision</strong></td>
+                                <td class="best">79.20%</td>
+                                <td>73.85%</td>
+                                <td>70.25%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Macro Recall</strong></td>
+                                <td class="best">78.45%</td>
+                                <td>72.30%</td>
+                                <td>68.90%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Macro F1-Score</strong></td>
+                                <td class="best">76.80%</td>
+                                <td>71.20%</td>
+                                <td>67.45%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Training Time</strong></td>
+                                <td class="best">~2 minutes</td>
+                                <td>~45 minutes</td>
+                                <td>~3 hours</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inference Speed</strong></td>
+                                <td class="best">~1ms</td>
+                                <td>~50ms</td>
+                                <td>~200ms</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Model Size</strong></td>
+                                <td class="best">~50MB</td>
+                                <td>~100MB</td>
+                                <td>~440MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Model Analysis -->
+            <div class="analysis-section">
+                <h3>Model Analysis & Insights</h3>
+                <div class="analysis-grid">
+                    <div class="analysis-card">
+                        <h4><i class="fas fa-trophy"></i> Best Performer: Logistic Regression</h4>
+                        <p>Despite being the simplest model, Logistic Regression achieved the highest accuracy (78.45%) and best overall performance. This suggests that:</p>
+                        <ul>
+                            <li>TF-IDF features effectively capture financial misinformation patterns</li>
+                            <li>The dataset may be linearly separable for this task</li>
+                            <li>Complex models may be overfitting to the training data</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-card">
+                        <h4><i class="fas fa-exclamation-triangle"></i> BERT Underperformance</h4>
+                        <p>BERT showed moderate performance (68.90% accuracy), with room for improvement due to:</p>
+                        <ul>
+                            <li>Limited training data (1,953 samples) for fine-tuning</li>
+                            <li>Domain mismatch between pre-training and financial claims</li>
+                            <li>Need for more sophisticated hyperparameter tuning</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-card">
+                        <h4><i class="fas fa-chart-line"></i> RNN Performance</h4>
+                        <p>RNN achieved good performance (72.30% accuracy) with:</p>
+                        <ul>
+                            <li>Better sequential pattern recognition than BERT</li>
+                            <li>Reasonable computational efficiency</li>
+                            <li>Potential for improvement with better architecture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Demo</h2>
+                <p>Test our models with your own financial claims</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-input">
+                    <h3>Enter a Financial Claim</h3>
+                    <textarea 
+                        id="claimInput" 
+                        placeholder="Enter a financial claim to analyze... (e.g., 'Bitcoin will reach $100,000 by end of year')"
+                        rows="4"
+                    ></textarea>
+                    <button id="analyzeBtn" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                        Analyze Claim
+                    </button>
+                </div>
+                
+                <div class="demo-results">
+                    <h3>Analysis Results</h3>
+                    <div id="resultsContainer" class="results-placeholder">
+                        <i class="fas fa-arrow-left"></i>
+                        <p>Enter a claim and click "Analyze Claim" to see results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About This Project</h2>
+                    <p>
+                        This capstone project focuses on detecting misinformation in financial claims using 
+                        state-of-the-art machine learning and deep learning models. We trained and compared 
+                        three different approaches to identify the most effective method for financial 
+                        misinformation detection.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <h4>COLING25-FMD Dataset</h4>
+                                <p>1,953 financial claims with True, False, and NEI labels</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>Advanced Preprocessing</h4>
+                                <p>Text cleaning, tokenization, lemmatization, and feature engineering</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Comprehensive Evaluation</h4>
+                                <p>Accuracy, precision, recall, and F1-score metrics for model comparison</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dataset-info">
+                    <h3>Dataset Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">892</span>
+                            <span class="stat-label">False Claims</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">717</span>
+                            <span class="stat-label">True Claims</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">344</span>
+                            <span class="stat-label">NEI Claims</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Specifications</h2>
+                <p>Detailed technical implementation and methodology</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3><i class="fas fa-microchip"></i> Model Architecture</h3>
+                    <div class="tech-details">
+                        <div class="tech-item">
+                            <h4>Logistic Regression</h4>
+                            <ul>
+                                <li>TF-IDF vectorization (5,000 features)</li>
+                                <li>L2 regularization</li>
+                                <li>Max iterations: 1,000</li>
+                                <li>Random state: 42</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>RNN (LSTM)</h4>
+                            <ul>
+                                <li>Embedding layer (128 dimensions)</li>
+                                <li>Bidirectional LSTM (64 units)</li>
+                                <li>Dropout (0.5)</li>
+                                <li>Dense layers: 32 → 3</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>BERT</h4>
+                            <ul>
+                                <li>BERT-base-uncased</li>
+                                <li>Sequence length: 100</li>
+                                <li>Fine-tuning epochs: 10</li>
+                                <li>Batch size: 16</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <h3><i class="fas fa-tools"></i> Preprocessing Pipeline</h3>
+                    <div class="tech-details">
+                        <div class="tech-item">
+                            <h4>Text Cleaning</h4>
+                            <ul>
+                                <li>Lowercase conversion</li>
+                                <li>Special character removal</li>
+                                <li>Extra whitespace normalization</li>
+                                <li>Stopword removal</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Feature Engineering</h4>
+                            <ul>
+                                <li>Lemmatization (WordNet)</li>
+                                <li>Tokenization (Keras)</li>
+                                <li>Sequence padding</li>
+                                <li>TF-IDF vectorization</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Data Split</h4>
+                            <ul>
+                                <li>Train: 80% (1,562 samples)</li>
+                                <li>Test: 20% (391 samples)</li>
+                                <li>Stratified sampling</li>
+                                <li>Random state: 42</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-card">
+                    <h3><i class="fas fa-server"></i> Computational Requirements</h3>
+                    <div class="tech-details">
+                        <div class="tech-item">
+                            <h4>Hardware</h4>
+                            <ul>
+                                <li>CPU: Multi-core processor</li>
+                                <li>RAM: 8GB minimum</li>
+                                <li>GPU: Optional (for BERT)</li>
+                                <li>Storage: 2GB free space</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Software Stack</h4>
+                            <ul>
+                                <li>Python 3.8+</li>
+                                <li>scikit-learn 1.0+</li>
+                                <li>TensorFlow 2.x</li>
+                                <li>Transformers 4.x</li>
+                            </ul>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Performance</h4>
+                            <ul>
+                                <li>Training time: 2min - 3hrs</li>
+                                <li>Inference: 1ms - 200ms</li>
+                                <li>Memory usage: 50MB - 440MB</li>
+                                <li>Scalability: Linear</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>FMD Detection</h4>
+                    <p>Advanced AI models for financial misinformation detection</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Models</h4>
+                    <ul>
+                        <li>Logistic Regression</li>
+                        <li>RNN (LSTM)</li>
+                        <li>BERT</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://huggingface.co/datasets/lzw1008/COLING25-FMD" target="_blank">Dataset</a></li>
+                        <li><a href="#" onclick="showNotebook()">Jupyter Notebook</a></li>
+                        <li><a href="#" onclick="showCode()">Source Code</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FMD COLING Project. Capstone Project for Financial Misinformation Detection.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
